@@ -7,7 +7,7 @@
     <style>
       nav {
         background-color: rgb(113, 131, 142);
-        padding: 20px;
+        padding: 15px;
         margin: 0px;
         border: 5px solid black;
         border-radius: 5px;
@@ -28,15 +28,15 @@
         text-decoration: none;
         padding: 10px;
         margin: 5px;
-        color: rgb(15, 15, 15);
+        color: #234863;
         border: 1px solid rgb(113, 131, 142);
         font-size: 25px;
         transition: background-color 0.5s;
-        border-radius: 20px;
+        border-radius: 15px;
       }
       a:hover {
-        background-color: rgb(200, 231, 230);
-        color: blueviolet;
+        background-color: rgb(128, 102, 243);
+        color: rgb(245, 242, 242);
         text-transform: capitalize;
       }
 
@@ -60,15 +60,31 @@
       body {
         background-size: cover;
       }
+      .ant {
+        text-decoration: none;
+        padding: 10px;
+        margin: 5px;
+        color: #1a0a0a;
+        border: 1px solid rgb(113, 131, 142);
+        font-size: 25px;
+        transition: background-color 0.5s;
+        border-radius: 20px;
+      }
+      .ant:hover {
+        background-color: rgb(113, 131, 142);
+      }
+      .open:hover {
+        color: antiquewhite;
+      }
     </style>
   </head>
-  <body style="background-image: url('./indes.jpg')">
+  <body style="background-image: url('./front.jpg')">
     <nav>
       <ul>
-        <li><a href="">Home</a></li>
-        <li><a href="">About</a></li>
+        <li><a class="ant" href="">Home</a></li>
+        <li><a class="ant" href="">About</a></li>
         <li class="dropdown">
-          <a href="#">Courses</a>
+          <a class="ant" href="#">Courses</a>
           <ul class="dropdown-menu">
             <div class="ddm">
               <li class="open">
@@ -83,7 +99,7 @@
             </div>
           </ul>
         </li>
-        <li><a href="">Contact Us</a></li>
+        <li><a class="ant" href="">Contact Us</a></li>
       </ul>
     </nav>
   </body>
